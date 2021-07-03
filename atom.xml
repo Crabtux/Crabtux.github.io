@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Crabtux&#39;s Blog</title>
   
-  <subtitle>Too Young, too simple, sometimes naive!</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
-  <updated>2021-07-01T13:56:41.069Z</updated>
-  <id>http://example.com/</id>
+  <link href="http://crabtux.github.io/atom.xml" rel="self"/>
+  
+  <link href="http://crabtux.github.io/"/>
+  <updated>2021-07-03T14:53:38.693Z</updated>
+  <id>http://crabtux.github.io/</id>
   
   <author>
     <name>Crabtux</name>
@@ -17,20 +17,20 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>建立博客时遇到的问题小汇总</title>
-    <link href="http://example.com/2021/07/01/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%8F%E6%B1%87%E6%80%BB/"/>
-    <id>http://example.com/2021/07/01/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%8F%E6%B1%87%E6%80%BB/</id>
+    <title>建立博客时遇到的问题归档</title>
+    <link href="http://crabtux.github.io/2021/07/01/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%8F%E6%B1%87%E6%80%BB/"/>
+    <id>http://crabtux.github.io/2021/07/01/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%8F%E6%B1%87%E6%80%BB/</id>
     <published>2021-07-01T07:34:11.000Z</published>
-    <updated>2021-07-01T13:56:41.069Z</updated>
+    <updated>2021-07-03T14:53:38.693Z</updated>
     
-    <content type="html"><![CDATA[<p><del>好吧这个博文其实就是给我练习我那半死不活的Markdown用的</del></p><hr><h3 id="问题1：无法部署网站"><a href="#问题1：无法部署网站" class="headerlink" title="问题1：无法部署网站"></a>问题1：无法部署网站</h3><p><img src="/images/blog02/image01.png" alt="第一张图片" title="没错这是问题1"><br>这是建立博客第一天就碰到的问题。 </p><blockquote><p><strong>fatal:unable to access ‘<a href="https://github.com/Crabtux/Crabtux.github.io.git&#39;">https://github.com/Crabtux/Crabtux.github.io.git&#39;</a>: OpenSSL SSL_read:Connection was reset, errno 10054</strong></p></blockquote><p>上网一查发现就是网太慢了，挂个梯子就没大碍了。<br><del>其实可能就是我家网辣鸡的问题</del> </p><h3 id="问题2：插入图片"><a href="#问题2：插入图片" class="headerlink" title="问题2：插入图片"></a>问题2：插入图片</h3><p>其实没啥，只是我sb了而已。<br>只要记得生成的渲染前的网站架构跟渲染后不一样就行。</p>]]></content>
+    <content type="html"><![CDATA[<p><del>好吧这个博文其实就是给我练习我那半死不活的Markdown用的</del></p><hr><h2 id="问题1："><a href="#问题1：" class="headerlink" title="问题1："></a>问题1：</h2><p><img src="/images/blog02/image01.png" alt="第一张图片" title="没错这是问题1"><br>这是建立博客第一天就碰到的问题。 </p><blockquote><p><strong>fatal:unable to access ‘<a href="https://github.com/Crabtux/Crabtux.github.io.git&#39;">https://github.com/Crabtux/Crabtux.github.io.git&#39;</a>: OpenSSL SSL_read:Connection was reset, errno 10054</strong></p></blockquote><p>上网一查发现就是我的卧室网太差了，搬到客厅就没大碍了。<br><del>为什么当初不买个好点的路由器啊呜呜呜</del></p><h2 id="问题2："><a href="#问题2：" class="headerlink" title="问题2："></a>问题2：</h2><p>其实没啥，只是我sb了而已。<br>只要记得生成的渲染前的网站架构跟渲染后不一样就行。</p><h2 id="问题3："><a href="#问题3：" class="headerlink" title="问题3："></a>问题3：</h2><p>这是2020/7/3晚上碰到的问题。<br>我觉得原来那个主题（<strong>alpha-dust</strong>，非常炫酷）不太适合我的博客，就上网打算找一个主题。<br>简单地去官网找了一下之后发现了现在的主题（<strong>butterfly</strong>），遂下载。<br>一顿操作之后打算在测试一下，然而打开本地网站时却出现了问题。<br>没有显示网站，取而代之的是一段英文。 </p><blockquote><p><strong>extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug</strong> </p></blockquote><p>这下可把我整不会了，上网一顿搜索。<br>发现是因为少了几个依赖包，果断安装。<br>别的倒是没什么，但再装hexo-browsersync的时候又出了问题。<br><del>图忘了截了QAQ</del><br>我一开始读错误提示的时候以为我家网又炸了，就重试了几遍，并无卵用，终于意识到问题的严重性。<br>认真读错误提示之后发现居然是因为没装VS C++？？？<br>好吧花了半天装了一下，问题就解决了。<br><del>SSD 我的256GSSD 呜呜呜</del></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;&lt;del&gt;好吧这个博文其实就是给我练习我那半死不活的Markdown用的&lt;/del&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;问题1：无法部署网站&quot;&gt;&lt;a href=&quot;#问题1：无法部署网站&quot; class=&quot;headerlink&quot; title=&quot;问题1：无法部署网站&quot;&gt;&lt;/a&gt;问</summary>
+&lt;h2 id=&quot;问题1：&quot;&gt;&lt;a href=&quot;#问题1：&quot; class=&quot;headerlink&quot; title=&quot;问题1：&quot;&gt;&lt;/a&gt;问题1：&lt;/h2&gt;&lt;p&gt;&lt;img sr</summary>
       
     
     
