@@ -2,14 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://crabtux.github.io/2021/07/08/vim%E5%AD%A6%E4%B9%A0/</loc>
-    
-    <lastmod>2021-07-08</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://crabtux.github.io/2021/07/05/MISC-SimpleRAR%E9%A2%98%E8%A7%A3/</loc>
+    <loc>http://crabtux.github.io/about/index.html</loc>
     
     <lastmod>2021-07-08</lastmod>
     
@@ -23,9 +16,16 @@
   </url>
   
   <url>
-    <loc>http://crabtux.github.io/about/index.html</loc>
+    <loc>http://crabtux.github.io/2021/07/08/vim%E5%AD%A6%E4%B9%A0/</loc>
     
-    <lastmod>2021-07-01</lastmod>
+    <lastmod>2021-07-08</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://crabtux.github.io/2021/07/05/MISC-SimpleRAR%E9%A2%98%E8%A7%A3/</loc>
+    
+    <lastmod>2021-07-08</lastmod>
     
   </url>
   
