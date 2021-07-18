@@ -6,7 +6,7 @@
   <link href="http://crabtux.github.io/atom.xml" rel="self"/>
   
   <link href="http://crabtux.github.io/"/>
-  <updated>2021-07-12T15:11:25.062Z</updated>
+  <updated>2021-07-18T07:07:10.548Z</updated>
   <id>http://crabtux.github.io/</id>
   
   <author>
@@ -21,17 +21,12 @@
     <link href="http://crabtux.github.io/2021/07/08/vim%E5%AD%A6%E4%B9%A0/"/>
     <id>http://crabtux.github.io/2021/07/08/vim%E5%AD%A6%E4%B9%A0/</id>
     <published>2021-07-08T08:27:21.000Z</published>
-    <updated>2021-07-12T15:11:25.062Z</updated>
+    <updated>2021-07-18T07:07:10.548Z</updated>
     
     <content type="html"><![CDATA[<p><del>我好累 vim好难</del> </p><hr><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>这篇文章本质上是写给我自己看的，而我这个人又极其懒惰。<br>因此我自认为不需要刻意记忆的东西就不会写在里面。（比如说模式之间的切换等等）<br>一些我容易遗忘的东西我就会记在这里。<br>随着学习的深入 大概 会逐渐更新。<br><del>话说你要真想学vim，你也不该来看这篇文章啊</del><br><br> </p><h2 id="资料来源"><a href="#资料来源" class="headerlink" title="资料来源"></a>资料来源</h2><p><strong>The missing semester of your CS education(MIT公开课)</strong><br><a href="https://missing-semester-cn.github.io/">https://missing-semester-cn.github.io</a></p><p><strong>Vimtutor</strong><br>bash自带</p><p><strong>鸟哥的Linux私房菜；基础学习篇</strong><br><a href="https://linux.vbird.org/">https://linux.vbird.org</a></p><p><strong>网上的各种博客，由于数量过多，在此不一一列举了</strong><br><br> </p><h2 id="主要命令"><a href="#主要命令" class="headerlink" title="主要命令"></a>主要命令</h2><h3 id="移动"><a href="#移动" class="headerlink" title="移动"></a>移动</h3><ul><li>基本移动：hjkl</li><li>词：w、b、e</li><li>行内：0、$</li><li>屏幕： H、M、L</li><li>整文件：G、g</li><li>翻页：^F（下翻一页）、^B（上翻一页）</li><li>滚一行：^E（下滚一行）、^Y（上滚一行）</li><li>括号配对：%</li><li>查找：/、？ </li></ul><h3 id="编辑"><a href="#编辑" class="headerlink" title="编辑"></a>编辑</h3><ul><li>O/o：在之上/之下插入行</li><li>x：删除字符</li><li>r：替换字符</li><li>s：替换字符并进入insert mode</li><li>d：删除（高级一点）</li><li>c：改变（高级一点）</li><li>y：复制</li><li>d：剪切</li><li>p：粘贴 </li></ul><h3 id="命令行模式"><a href="#命令行模式" class="headerlink" title="命令行模式"></a>命令行模式</h3><ul><li>:s/old/new：替换文件内容</li><li>:&gt;：在行首添加制表符</li></ul><h3 id="多窗口模式"><a href="#多窗口模式" class="headerlink" title="多窗口模式"></a>多窗口模式</h3><ul><li>:new name                 新建一个名为name的文件</li><li>:split(sp) name           横向分割</li><li>:vsplit(vs) name          纵向分割</li><li>:Ctrl+w+hjkl              多窗口切换</li><li>:(vertical) resize(res)   重置窗口大小</li><li>:q                        退出当前窗口</li><li>:qa                       退出所有窗口</li></ul><h3 id="一些奇怪的操作"><a href="#一些奇怪的操作" class="headerlink" title="一些奇怪的操作"></a>一些奇怪的操作</h3><ul><li>十六进制显示文件内容<ul><li>bash中输入vim -b filename</li><li>vim中输入:%!xxd -g 1</li><li>长得跟普通的十六进制编辑器差不多吧</li></ul></li></ul>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;&lt;del&gt;我好累 vim好难&lt;/del&gt; &lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;这篇文章本质上是写给我自己看的，而我这个人又极其懒惰。&lt;br&gt;因此我自认</summary>
-      
+    <summary type="html">萌新大战vim系列</summary>
     
     
     
@@ -45,15 +40,12 @@
     <link href="http://crabtux.github.io/2021/07/05/MISC-SimpleRAR%E9%A2%98%E8%A7%A3/"/>
     <id>http://crabtux.github.io/2021/07/05/MISC-SimpleRAR%E9%A2%98%E8%A7%A3/</id>
     <published>2021-07-05T03:33:33.000Z</published>
-    <updated>2021-07-08T14:39:26.597Z</updated>
+    <updated>2021-07-18T07:06:53.169Z</updated>
     
     <content type="html"><![CDATA[<h2 id="前言与吐槽"><a href="#前言与吐槽" class="headerlink" title="前言与吐槽"></a>前言与吐槽</h2><p>你TM就值5分？？？你比后面那个<strong>base64stego</strong>难了一个次元吧？？？<br><del>XCTF的界面做的是真的中二</del><br><br></p><h2 id="题目来源"><a href="#题目来源" class="headerlink" title="题目来源"></a>题目来源</h2><p>XCTF攻防世界 MISC 新手练习区 T10<br><a href="https://adworld.xctf.org.cn/task/answer?type=misc&amp;number=1&amp;grade=0&amp;id=5102&amp;page=1">https://adworld.xctf.org.cn/task/answer?type=misc&amp;number=1&amp;grade=0&amp;id=5102&amp;page=1</a><br><br></p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>下载题给rar压缩包，解压，发现解压后的文件大小比解压前还小，感到不对劲。<br><img src="/images/blog03/image01.png" alt="第一张图片" title="第一张图片"></p><p>掏出WinHex查看压缩包，发现里面还有一张secret.png没有被解压出来。<br>肯定是压缩包出现了什么问题。<br><img src="/images/blog03/image02.png" alt="第二张图片" title="第二张图片"></p><p>现在让我们一起来学习rar压缩包格式吧！<br><a href="https://www.rarlab.com/technote.htm">https://www.rarlab.com/technote.htm</a> </p><p>学习完毕之后让我们来分析一下这个rar压缩包。<br>flag.txt能够正常解压，说明主要矛盾不在它身上。<br>查看secret.png部分的数据，发现文件头出现错误。<br><img src="/images/blog03/image03.png" alt="第三张图片" title="第三张图片"><br>本应是74的文件头赫然写着7A，遂修改之。<br><del>这里考察了同学们的静态视力和意志力，反正我看得头都疼</del><br>可以正常解压了。<br><img src="/images/blog03/image04.png" alt="第四张图片" title="第四张图片"></p><p>题给提示是双图层，打开我们的PS CS6，尝试打开这个图片，却出现了错误提示。<br>感到不对劲的我们再次掏出WinHex，打开了secret.png。<br><img src="/images/blog03/image05.png" alt="第五张图片" title="第五张图片"><br>开头赫然写着gif，我抄！！<br>修改文件后缀名为gif，用ps打开secret.gif。<br><img src="/images/blog03/image06.png" alt="第六张图片" title="第六张图片"><br>表面看上去就是一张白图啊。</p><p>既然是双图层，估计这两个图层暗藏玄机。<br>利用PS的导出功能把两个图层导出为图片。<br>然后使用Stegsolve分别打开看看。<br>默认的Normal Image看不出什么东西，转换查看方式之后，在Gray bits模式下分别发现了二维码的上下两半。<br><img src="/images/blog03/image07.png" alt="第七张图片" title="第七张图片"><br>然后就可以为所欲为了，扫描完整二维码获得flag。<br><br> </p><h2 id="思考与感悟"><a href="#思考与感悟" class="headerlink" title="思考与感悟"></a>思考与感悟</h2><p>个人感觉本题偏难，拐了好几个弯子，算是个小的综合题。<br>这种题目还是第一次做，特别是图片隐写，姿势水平还是不太够。<br><del>所以你为啥只有5分啊卧槽</del></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;h2 id=&quot;前言与吐槽&quot;&gt;&lt;a href=&quot;#前言与吐槽&quot; class=&quot;headerlink&quot; title=&quot;前言与吐槽&quot;&gt;&lt;/a&gt;前言与吐槽&lt;/h2&gt;&lt;p&gt;你TM就值5分？？？你比后面那个&lt;strong&gt;base64stego&lt;/strong&gt;难了一个次元吧？？？&lt;br&gt;</summary>
-      
+    <summary type="html">萌新大战CTF系列（？</summary>
     
     
     
@@ -67,17 +59,12 @@
     <link href="http://crabtux.github.io/2021/07/01/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%8F%E6%B1%87%E6%80%BB/"/>
     <id>http://crabtux.github.io/2021/07/01/%E5%BB%BA%E7%AB%8B%E5%8D%9A%E5%AE%A2%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E5%B0%8F%E6%B1%87%E6%80%BB/</id>
     <published>2021-07-01T07:34:11.000Z</published>
-    <updated>2021-07-08T14:40:28.967Z</updated>
+    <updated>2021-07-18T07:07:23.862Z</updated>
     
     <content type="html"><![CDATA[<p><del>好吧这个博文其实就是给我练习我那半死不活的Markdown用的</del></p><hr><h2 id="问题1：无法部署网站"><a href="#问题1：无法部署网站" class="headerlink" title="问题1：无法部署网站"></a>问题1：无法部署网站</h2><p><img src="/images/blog02/image01.png" alt="第一张图片" title="第一张图片"><br>这是建立博客第一天就碰到的问题。 </p><blockquote><p><strong>fatal:unable to access ‘<a href="https://github.com/Crabtux/Crabtux.github.io.git&#39;">https://github.com/Crabtux/Crabtux.github.io.git&#39;</a>: OpenSSL SSL_read:Connection was reset, errno 10054</strong></p></blockquote><p>上网一查发现就是我的卧室网太差了，搬到客厅就没大碍了。<br><del>为什么当初不买个好点的路由器啊呜呜呜</del><br><br></p><h2 id="问题2：插入图片"><a href="#问题2：插入图片" class="headerlink" title="问题2：插入图片"></a>问题2：插入图片</h2><p>其实没啥，只是我sb了而已。<br>1、生成的渲染前的网站架构跟渲染后不一样。<br>2、图床最好不要用？我用洛谷图床，部署之后图片无法显示？<br><br></p><h2 id="问题3：缺少依赖包导致网页渲染出错"><a href="#问题3：缺少依赖包导致网页渲染出错" class="headerlink" title="问题3：缺少依赖包导致网页渲染出错"></a>问题3：缺少依赖包导致网页渲染出错</h2><p>这是2020/7/3晚上碰到的问题。<br>我觉得原来那个主题（<strong>alpha-dust</strong>，非常炫酷）不太适合我的博客，就上网打算找一个主题。<br>简单地去官网找了一下之后发现了现在的主题（<strong>butterfly</strong>），遂下载。<br>一顿操作之后打算测试一下，然而打开本地网站时却出现了问题。<br>没有显示网页，取而代之的是一段英文。 </p><blockquote><p><strong>extends includes/layout.pug block content #recent-posts.recent-posts include includes/recent-posts.pug include includes/pagination.pug</strong> </p></blockquote><p>这下可把我整不会了，上网一顿搜索。<br>发现是因为少了几个依赖包，果断安装。<br>别的倒是没什么，但再装hexo-browsersync的时候又出了问题。<br><del>图忘了截了QAQ</del><br>我一开始读错误提示的时候以为我家网又炸了，就重试了几遍，并无卵用，终于意识到问题的严重性。<br>认真读错误提示之后发现居然是因为没装VS C++？？？<br>好吧花了半天装了一下，问题就解决了。<br><del>SSD 我的256GSSD 呜呜呜</del></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;&lt;del&gt;好吧这个博文其实就是给我练习我那半死不活的Markdown用的&lt;/del&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;问题1：无法部署网站&quot;&gt;&lt;a href=&quot;#问题1：无法部署网站&quot; class=&quot;headerlink&quot; title=&quot;问题1：无法部署网站&quot;&gt;&lt;/a&gt;问</summary>
-      
+    <summary type="html">听说这里要有一个描述？</summary>
     
     
     
