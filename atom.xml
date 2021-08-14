@@ -6,7 +6,7 @@
   <link href="http://crabtux.github.io/atom.xml" rel="self"/>
   
   <link href="http://crabtux.github.io/"/>
-  <updated>2021-08-07T13:41:28.019Z</updated>
+  <updated>2021-08-10T15:06:40.759Z</updated>
   <id>http://crabtux.github.io/</id>
   
   <author>
@@ -17,15 +17,21 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>MISC-WDCTF2017泛做</title>
     <link href="http://crabtux.github.io/2021/08/07/MISC-WDCTF2017%E6%B3%9B%E5%81%9A/"/>
     <id>http://crabtux.github.io/2021/08/07/MISC-WDCTF2017%E6%B3%9B%E5%81%9A/</id>
-    <published>2021-08-07T13:40:56.098Z</published>
-    <updated>2021-08-07T13:41:28.019Z</updated>
+    <published>2021-08-07T13:43:59.000Z</published>
+    <updated>2021-08-10T15:06:40.759Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="题目来源"><a href="#题目来源" class="headerlink" title="题目来源"></a>题目来源</h2><p>XCTF攻防世界 高手（？）进阶区<br><a href="https://adworld.xctf.org.cn/task/task_list?type=misc&amp;number=1&amp;grade=1&amp;page=4">https://adworld.xctf.org.cn/task/task_list?type=misc&amp;number=1&amp;grade=1&amp;page=4</a><br><br></p><h2 id="2-1-Finals"><a href="#2-1-Finals" class="headerlink" title="2-1(Finals)"></a>2-1(Finals)</h2><p>下载下来的 PNG 文件炸了，用 010editor 查看，提示 “Unknown magic version”。<br>把文件头修好之后 010editor 又提示 “CRC Mismatch @ chunk[0]”。<br>发现图片宽度异常，写个脚本 CRC 爆破狂暴轰入，得到正确的宽度 709。<br>打开图片获得 flag。<br><br><br>附上 CRC 爆破代码（来源为 CTF Wiki）：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> binascii</span><br><span class="line"><span class="keyword">import</span> struct</span><br><span class="line"></span><br><span class="line">misc = <span class="built_in">open</span>(<span class="string">&quot;misc4.png&quot;</span>,<span class="string">&quot;rb&quot;</span>).read()</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1024</span>):</span><br><span class="line">    data = misc[<span class="number">12</span>:<span class="number">16</span>] + struct.pack(<span class="string">&#x27;&gt;i&#x27;</span>,i)+ misc[<span class="number">20</span>:<span class="number">29</span>]</span><br><span class="line">    crc32 = binascii.crc32(data) &amp; <span class="number">0xffffffff</span></span><br><span class="line">    <span class="keyword">if</span> crc32 == <span class="number">0x932f8a6b</span>:</span><br><span class="line"><span class="built_in">print</span> i</span><br></pre></td></tr></table></figure><h2 id="3-1"><a href="#3-1" class="headerlink" title="3-1"></a>3-1</h2><p>下载下来的文件无后缀名，用 010editor 查看，发现是 rar 压缩包。<br>修改后缀名之后打开，解压其中的文件。</p><p>解压出来的文件仍然没有后缀名，用 010editor 查看，发现是 wireshark 流量包，打开即可。</p><p>追踪TCP流，在流5、6中发现了 flag.rar、1、2、3 四个文件(没错，后三个数字都是文件名，并且无后缀名)。<br>flag.rar 是个加密压缩文件，先放一边晾着。<br>1 是坏掉的 flag.rar。吃灰去吧你！<br>2 是个 base64 字符串，先放一边晾着。<br>3 是个 python 程序，使用的是AES-256加密，密文都写在程序里了。</p><p>猜想 3 解密出来的玩意就是 flag.rar 的密码，所以先研究它。<br>猜想 2 的 base64 解密成果就是 3 所需要的密文。<br>两个猜想都是正确的，压缩包解压后即可得到flag。<br><br></p><h2 id="3-2"><a href="#3-2" class="headerlink" title="3-2"></a>3-2</h2><p>下载下来的 gif 文件有 4 帧，拼起来变成一个二维码。<br>扫描得到一个 16 进制串，扔到 010editor 里发现是 pyc 文件。<br>反编译获得 python 文件，运行 func2(strr,key) 即可得到 flag。<br><strong>有一点值得注意：</strong><br><strong>运行 func2 的时候，运行环境不同可能会导致运行结果不同。</strong><br><strong>比如本文件在 Windows（Python3）下会输出乱码，而 Linux 环境（Python2）运行正常。</strong><br><br></p><h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+    
+    
+    <summary type="html">萌新大战CTF系列</summary>
     
     
     
     
+    <category term="MISC" scheme="http://crabtux.github.io/tags/MISC/"/>
     
   </entry>
   
@@ -53,9 +59,9 @@
     <link href="http://crabtux.github.io/2021/07/05/MISC-SimpleRAR%E9%A2%98%E8%A7%A3/"/>
     <id>http://crabtux.github.io/2021/07/05/MISC-SimpleRAR%E9%A2%98%E8%A7%A3/</id>
     <published>2021-07-05T03:33:33.000Z</published>
-    <updated>2021-07-18T09:28:46.502Z</updated>
+    <updated>2021-08-10T15:07:48.028Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="前言与吐槽"><a href="#前言与吐槽" class="headerlink" title="前言与吐槽"></a>前言与吐槽</h2><p>你TM就值5分？？？你比后面那个<strong>base64stego</strong>难了一个次元吧？？？<br><del>XCTF的界面做的是真的中二</del><br><br></p><h2 id="题目来源"><a href="#题目来源" class="headerlink" title="题目来源"></a>题目来源</h2><p>XCTF攻防世界 MISC 新手练习区 T10<br><a href="https://adworld.xctf.org.cn/task/answer?type=misc&amp;number=1&amp;grade=0&amp;id=5102&amp;page=1">https://adworld.xctf.org.cn/task/answer?type=misc&amp;number=1&amp;grade=0&amp;id=5102&amp;page=1</a><br><br></p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>下载题给rar压缩包，解压，发现解压后的文件大小比解压前还小，感到不对劲。<br><img src="/images/blog03/image01.png" alt="第一张图片" title="第一张图片"></p><p>掏出WinHex查看压缩包，发现里面还有一张secret.png没有被解压出来。<br>肯定是压缩包出现了什么问题。<br><img src="/images/blog03/image02.png" alt="第二张图片" title="第二张图片"></p><p>现在让我们一起来学习rar压缩包格式吧！<br><a href="https://www.rarlab.com/technote.htm">https://www.rarlab.com/technote.htm</a> </p><p>学习完毕之后让我们来分析一下这个rar压缩包。<br>flag.txt能够正常解压，说明主要矛盾不在它身上。<br>查看secret.png部分的数据，发现文件头出现错误。<br><img src="/images/blog03/image03.png" alt="第三张图片" title="第三张图片"><br>本应是74的文件头赫然写着7A，遂修改之。<br><del>这里考察了同学们的静态视力和意志力，反正我看得头都疼</del><br>可以正常解压了。<br><img src="/images/blog03/image04.png" alt="第四张图片" title="第四张图片"></p><p>题给提示是双图层，打开我们的PS CS6，尝试打开这个图片，却出现了错误提示。<br>感到不对劲的我们再次掏出WinHex，打开了secret.png。<br><img src="/images/blog03/image05.png" alt="第五张图片" title="第五张图片"><br>开头赫然写着gif，我抄！！<br>修改文件后缀名为gif，用ps打开secret.gif。<br><img src="/images/blog03/image06.png" alt="第六张图片" title="第六张图片"><br>表面看上去就是一张白图啊。</p><p>既然是双图层，估计这两个图层暗藏玄机。<br>利用PS的导出功能把两个图层导出为图片。<br>然后使用Stegsolve分别打开看看。<br>默认的Normal Image看不出什么东西，转换查看方式之后，在Gray bits模式下分别发现了二维码的上下两半。<br><img src="/images/blog03/image07.png" alt="第七张图片" title="第七张图片"><br>然后就可以为所欲为了，扫描完整二维码获得flag。<br><br> </p><h2 id="思考与感悟"><a href="#思考与感悟" class="headerlink" title="思考与感悟"></a>思考与感悟</h2><p>个人感觉本题偏难，拐了好几个弯子，算是个小的综合题。<br>这种题目还是第一次做，特别是图片隐写，姿势水平还是不太够。<br><del>所以你为啥只有5分啊卧槽</del></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="题目来源"><a href="#题目来源" class="headerlink" title="题目来源"></a>题目来源</h2><p>XCTF攻防世界 MISC 新手练习区 T10<br><a href="https://adworld.xctf.org.cn/task/answer?type=misc&amp;number=1&amp;grade=0&amp;id=5102&amp;page=1">https://adworld.xctf.org.cn/task/answer?type=misc&amp;number=1&amp;grade=0&amp;id=5102&amp;page=1</a><br><br></p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><p>下载题给rar压缩包，解压，发现解压后的文件大小比解压前还小，感到不对劲。<br><img src="/images/blog03/image01.png" alt="第一张图片" title="第一张图片"></p><p>掏出WinHex查看压缩包，发现里面还有一张secret.png没有被解压出来。<br>肯定是压缩包出现了什么问题。<br><img src="/images/blog03/image02.png" alt="第二张图片" title="第二张图片"></p><p>学习完毕之后让我们来分析一下这个rar压缩包。<br>flag.txt能够正常解压，说明主要矛盾不在它身上。<br>查看secret.png部分的数据，发现文件头出现错误。<br><img src="/images/blog03/image03.png" alt="第三张图片" title="第三张图片"><br>本应是74的文件头赫然写着7A，遂修改之。<br>可以正常解压了。<br><img src="/images/blog03/image04.png" alt="第四张图片" title="第四张图片"></p><p>题给提示是双图层，打开我们的PS CS6，尝试打开这个图片，却出现了错误提示。<br>感到不对劲的我们再次掏出WinHex，打开了secret.png。<br><img src="/images/blog03/image05.png" alt="第五张图片" title="第五张图片"><br>开头赫然写着gif，我抄！！<br>修改文件后缀名为gif，用ps打开secret.gif。<br><img src="/images/blog03/image06.png" alt="第六张图片" title="第六张图片"><br>表面看上去就是一张白图啊。</p><p>既然是双图层，估计这两个图层暗藏玄机。<br>利用PS的导出功能把两个图层导出为图片。<br>然后使用Stegsolve分别打开看看。<br>默认的Normal Image看不出什么东西，转换查看方式之后，在Gray bits模式下分别发现了二维码的上下两半。<br><img src="/images/blog03/image07.png" alt="第七张图片" title="第七张图片"><br>然后就可以为所欲为了，扫描完整二维码获得flag。<br><br> </p><h2 id="思考与感悟"><a href="#思考与感悟" class="headerlink" title="思考与感悟"></a>思考与感悟</h2><p>我是傻逼</p>]]></content>
     
     
     <summary type="html">萌新大战CTF系列（？</summary>
