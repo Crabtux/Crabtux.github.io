@@ -1,0 +1,11 @@
+body, #pagination .page-number.current {
+    cursor: url("/cursor/normal.gif"), auto
+}
+
+a {
+    cursor: url("/cursor/link.cur"), auto !important;
+}
+
+textarea, input, p:nth-child(0) {
+    cursor: url("/cursor/text.cur"), auto !important;
+}
