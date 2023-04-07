@@ -1,0 +1,292 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MetaCTF 留档 | 忧郁沙茶の博客</title><meta name="keywords" content="CTF"><meta name="author" content="Crabtux"><meta name="copyright" content="Crabtux"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="“是的，我是烂分，你恰到我了，但是你的线代却寄了个透彻。这一切，值得吗？”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MetaCTF 留档">
+<meta property="og:url" content="http://crabtux.github.io/2021/12/06/MetaCTF-%E7%95%99%E6%A1%A3/index.html">
+<meta property="og:site_name" content="忧郁沙茶の博客">
+<meta property="og:description" content="“是的，我是烂分，你恰到我了，但是你的线代却寄了个透彻。这一切，值得吗？”">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg">
+<meta property="article:published_time" content="2021-12-06T07:07:26.000Z">
+<meta property="article:modified_time" content="2023-04-07T08:56:28.703Z">
+<meta property="article:author" content="Crabtux">
+<meta property="article:tag" content="CTF">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://crabtux.github.io/2021/12/06/MetaCTF-%E7%95%99%E6%A1%A3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/snackbarjs/1.1.0/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'MetaCTF 留档',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-07 16:56:28'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/PureSnow/PureSnow.css"> <link rel="stylesheet" href="/css/Cursor/cursor.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="忧郁沙茶の博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-address-card"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/bulletin-board/"><i class="fa-fw fas fa-book"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">忧郁沙茶の博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-address-card"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/bulletin-board/"><i class="fa-fw fas fa-book"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">MetaCTF 留档</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-06T07:07:26.000Z" title="发表于 2021-12-06 15:07:26">2021-12-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-07T08:56:28.703Z" title="更新于 2023-04-07 16:56:28">2023-04-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2021/12/06/MetaCTF-%E7%95%99%E6%A1%A3/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/12/06/MetaCTF-%E7%95%99%E6%A1%A3/" itemprop="commentCount"></span></a></span></div></div></div><article class="post-content" id="article-container"><!--什么黑历史合集-->
+<!--## 比赛情况-->
+<!--- 比赛时间（UTC-8）：2021-12-04 04:00:00 ~ 2021-12-06 04:00:00，共计 48 h-->
+<!--- 比赛模式：解题模式（静态分值，无一血奖励）-->
+<!--- 队伍总分：8575-->
+<!--- 队伍排名：被 ban 了有个锤子排名-->
+<!--- 贡献分数：1325-->
+<!---->
+<!--## 前言与吐槽-->
+<!--“是的，我是烂分，你恰到我了，但是你的线代却寄了个透彻。这一切，值得吗？”-->
+<!---->
+<!--这次打的比赛貌似是从 CTFTime 上选的国外比赛，感觉上好像是是什么入门级别的比赛？-->
+<!--秉持着奇怪的优良传统，我还是只写了 Misc 部分。-->
+<!--只不过国外对 Misc 好像确实有细分，这次比赛就把 Misc 分了三块：-->
+<!--- Forehsics（数字取证）-->
+<!--- Reconnaissance（信息搜集）-->
+<!--- Other（其他）-->
+<!---->
+<!--只能说，我真的怀疑有的题水的程度了啊，有的中等分值的题目比 Hackergame 还水。-->
+<!--不过该不会写的题目还是不会写，比如万恶的社工题（卑微）-->
+<!--反正我的水平好像也就只能恰恰烂分了……-->
+<!---->
+<!--虽然我的周末又报销了，不过还是学到了一点东西的。-->
+<!--而且能感觉到，国外 CTF 的风格貌似跟国内还是有很大不同的。-->
+
+<h2 id="解出的题目"><a href="#解出的题目" class="headerlink" title="解出的题目"></a>解出的题目</h2><h3 id="Interception-I-100-pts-Other"><a href="#Interception-I-100-pts-Other" class="headerlink" title="Interception I (100 pts) (Other)"></a>Interception I (100 pts) (Other)</h3><blockquote>
+<p>192.168.0.1 is periodically (once every 4 seconds) sending the flag to 192.168.0.2 over UDP port 8000. Go get it.<br>ssh <a href="mailto:&#99;&#x74;&#x66;&#45;&#49;&#64;&#x68;&#x6f;&#x73;&#116;&#46;&#x63;&#103;&#50;&#49;&#x2e;&#109;&#x65;&#116;&#97;&#x70;&#x72;&#111;&#98;&#x6c;&#x65;&#109;&#x73;&#46;&#99;&#111;&#x6d;">&#99;&#x74;&#x66;&#45;&#49;&#64;&#x68;&#x6f;&#x73;&#116;&#46;&#x63;&#103;&#50;&#49;&#x2e;&#109;&#x65;&#116;&#97;&#x70;&#x72;&#111;&#98;&#x6c;&#x65;&#109;&#x73;&#46;&#99;&#111;&#x6d;</a> -p 7000</p>
+</blockquote>
+<p>ssh 连接到对面主机，给了一个 BusyBox 环境。</p>
+<p>可以去 /usr/bin 和 /usr/sbin 下看看有什么能用的网络工具，发现了这些玩意：</p>
+<ul>
+<li>ifconfig</li>
+<li>netstat</li>
+<li>nc</li>
+<li>nmap</li>
+<li>tcpdump</li>
+<li>telnet</li>
+<li>arping</li>
+</ul>
+<p>根据题意，考虑通过 ARP 欺骗，顶替 192.168.0.2，从而获取数据包。在终端下运行如下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig eth0 192.168.0.2 netmask 255.255.255.0</span><br></pre></td></tr></table></figure>
+
+<p>然后 ping 一下网关，更新一下 ARP 映射表，nc 监听 8000/udp 即可获取 flag。<br><br></p>
+<h3 id="Interception-II-150-pts-Other"><a href="#Interception-II-150-pts-Other" class="headerlink" title="Interception II (150 pts) (Other)"></a>Interception II (150 pts) (Other)</h3><blockquote>
+<p>Someone on this network is periodically sending the flag to … someone else on this network, over TCP port 8000. Go get it.<br>ssh <a href="mailto:&#x63;&#x74;&#x66;&#45;&#52;&#54;&#x65;&#x64;&#51;&#x35;&#x35;&#57;&#x64;&#x61;&#48;&#x38;&#x40;&#104;&#111;&#x73;&#116;&#x2e;&#99;&#x67;&#x32;&#x31;&#x2e;&#109;&#x65;&#x74;&#x61;&#x70;&#x72;&#x6f;&#x62;&#108;&#x65;&#x6d;&#115;&#x2e;&#99;&#x6f;&#x6d;">&#x63;&#x74;&#x66;&#45;&#52;&#54;&#x65;&#x64;&#51;&#x35;&#x35;&#57;&#x64;&#x61;&#48;&#x38;&#x40;&#104;&#111;&#x73;&#116;&#x2e;&#99;&#x67;&#x32;&#x31;&#x2e;&#109;&#x65;&#x74;&#x61;&#x70;&#x72;&#x6f;&#x62;&#108;&#x65;&#x6d;&#115;&#x2e;&#99;&#x6f;&#x6d;</a> -p 7000</p>
+</blockquote>
+<p>我们的目标和 Interception I 相同，但这次我们不知道 src 和 dst IP 了。</p>
+<p>知道端口号，还有 nmap，考虑扫描整个网段内的所有 IP 地址，获取存活主机的信息。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -p 8000 192.168.0.0-255</span><br></pre></td></tr></table></figure>
+
+<p>扫出来只有 192.168.0.78 的 TCP 8000 端口开着，和上面一题一样，直接把它挤掉。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ifconfig eth0 192.168.0.78 netmask 255.255.255.0</span><br><span class="line">nmap -p 8000 192.168.0.0-255</span><br></pre></td></tr></table></figure>
+
+<p>用 nc 监听自己的 8000/tcp 即可获得 flag。</p>
+<h3 id="Easy-as-it-TCP-Streams-250-pts-Forensics"><a href="#Easy-as-it-TCP-Streams-250-pts-Forensics" class="headerlink" title="Easy as it (TCP) Streams (250 pts) (Forensics)"></a>Easy as it (TCP) Streams (250 pts) (Forensics)</h3><blockquote>
+<p>Caleb was designing a problem for MetaCTF where the flag would be in the telnet plaintext. Unfortunately, he accidentally stopped the packet capture right before the flag was supposed to be revealed. Can you still find the flag? Note: You’ll need to decrypt in CyberChef rather than using a command line utility. </p>
+</blockquote>
+<p>下载下来一个 pcap 文件，用 Wireshark 打开，按照套路，先追踪一下 TCP 流。</p>
+<p><img src="/images/blog05/T3-1.png" alt="流 0" title="流 0"><br><img src="/images/blog05/T3-2.png" alt="流 1" title="流 1"><br><img src="/images/blog05/T3-3.png" alt="流 2" title="流 2"></p>
+<p>看起来主机用 gpg 加密了一个文件，流 0 有 PGP Message，流 1 有 PGP Private Key，流 2 有 passphrase。扔到 CyberChef 里可以一把梭。</p>
+<h3 id="Pattern-of-Life-275-pts-Forensics"><a href="#Pattern-of-Life-275-pts-Forensics" class="headerlink" title="Pattern of Life (275 pts) (Forensics)"></a>Pattern of Life (275 pts) (Forensics)</h3><blockquote>
+<p>Hackers have breached our network. We know they are there, hiding in the shadows as users continue to browse the web like normal. As a threat hunter, your job is to constantly be searching our environment for any signs of malicious behavior.</p>
+<p>Today you just received a packet capture (pcap) from a user’s workstation. We think that an attacker may have compromised the user’s machine and that the computer is beaconing out to their command and control (C2) server. Based on some other logs, we also think the attacker was <em>not</em> using a fully encrypted protocol and also did not put much care into making their C2 server look like a normal website. Your task? We’d like you to submit the port number that the C2 server is listening on in the form of MetaCTF{portnumber} as the flag.</p>
+</blockquote>
+<p>下载下来一个 pcap 文件，用 Wireshark 打开。题目要求是找到本机被监听的端口，给的提示有两个：</p>
+<ul>
+<li>用的不是加密协议</li>
+<li>看起来很可疑（异常流量？）</li>
+</ul>
+<p>流太多了，显然不能直接看。想到这个用户可能在疯狂浏览网页，而现在 HTTPS 在国外覆盖率很高，不妨把 443 端口直接无视掉？</p>
+<p>结果喜人，流量一下少了一大半，从上往下翻，发现本机的 8080 端口十分可疑，从头到尾都在疯狂地与对面主机的 49694 端口你来我往。答案也正是 8080。</p>
+<h3 id="I-want-my-files-back-275-pts-Reconnaissance"><a href="#I-want-my-files-back-275-pts-Reconnaissance" class="headerlink" title="I want my files back (275 pts) (Reconnaissance)"></a>I want my files back (275 pts) (Reconnaissance)</h3><blockquote>
+<p>While the world continues to battle COVID-19, the digital world continues to battle its own epidemic - ransomware. Criminals continue to hold organizations’ files hostage as they cast a wide net hacking anyone with a vulnerable device or through phishing.</p>
+<p>Fortunately criminals aren’t always the sharpest tool in the shed, and sometimes it’s possible to decrypt a ransomwared file without paying the ransom. We’ve come across one such file - perhaps you can figure out what Ransomware strain encrypted it and a way to decrypt it?</p>
+<p>There have been problems with downloading the entire file on Firefox, the md5sum of the file is 32cbeca49de4e1b297550f4ae95a39b6</p>
+</blockquote>
+<p>下载附件，给了一个被勒索文件加密的 png 文件，要求是解密。</p>
+<ul>
+<li>文件名有 [AA4-MX4-GGQD] 字样</li>
+<li>010 Editor 打开，看到末尾有 GotAllDone 字样</li>
+</ul>
+<p>谷歌可知，勒索软件叫做 Prometheus。</p>
+<p>GitHub 找到一个可以解密这玩意的 Python 脚本，功能貌似还挺强大，支持 GUI，支持通过特征字节缩小密码范围。<br><a target="_blank" rel="noopener" href="https://github.com/cycraft-corp/Prometheus-Decryptor">https://github.com/cycraft-corp/Prometheus-Decryptor</a></p>
+<p>下载、爆破，打开图片就是 flag。</p>
+<h3 id="The-Searcher-275-pts-Reconnaissance"><a href="#The-Searcher-275-pts-Reconnaissance" class="headerlink" title="The Searcher (275 pts) (Reconnaissance)"></a>The Searcher (275 pts) (Reconnaissance)</h3><blockquote>
+<p>Alright analyst. We need your help with some investigative work as we dive deeper into one of the infections on our company’s network. We’ve taken a small packet capture that we know contains some C2 traffic. In order to give us some more leads for the investigation though, we’d like to see if we can identify what C2 framework the attacker was using. This will give us some leads into potential host-based artifacts that might be left behind.</p>
+<p>Please submit the name of the C2 Framework being used in the form of MetaCTF{c2frameworkname}</p>
+</blockquote>
+<p>又双叒下载下来一个 pcap 文件，用 Wireshark 打开。</p>
+<p>追踪流可以看到几个有意思的东西，其中最有意思的当属这个。</p>
+<p><img src="/images/blog05/T6-1.png" alt="ASP" title="ASP"></p>
+<p>ASP.NET？<br>Google 搜索 C2 Framework ASP.NET 可以搜到 Covenant，交上去就是 flag。</p>
+<h2 id="未解出的题目"><a href="#未解出的题目" class="headerlink" title="未解出的题目"></a>未解出的题目</h2><h3 id="Interception-III-275-pts-Other"><a href="#Interception-III-275-pts-Other" class="headerlink" title="Interception III (275 pts) (Other)"></a>Interception III (275 pts) (Other)</h3><p><del>当时不懂路由（</del></p>
+<p>进入环境之后，telnet 本地网关，在 enp0s0 设备上再加一个目标 IP 实现 ARP 欺骗。<br>然后 nc 监听自己的 8000/udp 即可获得 flag。</p>
+<h3 id="Mystery-C2-Server-350-pts-Reconnaissance"><a href="#Mystery-C2-Server-350-pts-Reconnaissance" class="headerlink" title="Mystery C2 Server (350 pts) (Reconnaissance)"></a>Mystery C2 Server (350 pts) (Reconnaissance)</h3><p>To do…</p>
+<h3 id="The-Carver-475-pts-Forensics"><a href="#The-Carver-475-pts-Forensics" class="headerlink" title="The Carver (475 pts) (Forensics)"></a>The Carver (475 pts) (Forensics)</h3><p>To do…</p>
+<h3 id="Where’s-Vedder-525-pts-Reconnaissance"><a href="#Where’s-Vedder-525-pts-Reconnaissance" class="headerlink" title="Where’s Vedder? (525 pts) (Reconnaissance)"></a>Where’s Vedder? (525 pts) (Reconnaissance)</h3><p>Vedder 三部曲的第一部，分值高得吓人。<br>翻了题解，实在没看出来那个房子是 Funeral House……<br>这就是文化差异吗？</p>
+<p>知道是 Funeral House 之后，全州筛查「在公共森林中心的 Funeral House」即可。</p>
+<h3 id="Online-Presence-550-pts-Reconnaissance"><a href="#Online-Presence-550-pts-Reconnaissance" class="headerlink" title="Online Presence (550 pts) (Reconnaissance)"></a>Online Presence (550 pts) (Reconnaissance)</h3><p>To do…</p>
+<h3 id="They-call-me-TracerT-550-pts-Reconnaissance"><a href="#They-call-me-TracerT-550-pts-Reconnaissance" class="headerlink" title="They call me TracerT (550 pts) (Reconnaissance)"></a>They call me TracerT (550 pts) (Reconnaissance)</h3><p>To do…</p>
+<h3 id="New-Spot-600-pts-Reconnaissance"><a href="#New-Spot-600-pts-Reconnaissance" class="headerlink" title="New Spot (600 pts) (Reconnaissance)"></a>New Spot (600 pts) (Reconnaissance)</h3><p>To do…</p>
+<h3 id="Step-into-the-NET-600-pts-Other"><a href="#Step-into-the-NET-600-pts-Other" class="headerlink" title="Step into the NET (600 pts) (Other)"></a>Step into the NET (600 pts) (Other)</h3><p>To do…</p>
+<p>按照题目描述来看，是道综合型的取证分析题目。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CTF/">CTF</a></div><div class="post_share"></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/11/24/L3HCTF-留档/" title="L3HCTF 留档"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-24</div><div class="title">L3HCTF 留档</div></div></a></div><div><a href="/2022/04/21/Zer0pts-CTF-2022-留档/" title="Zer0pts CTF 2022 留档"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-21</div><div class="title">Zer0pts CTF 2022 留档</div></div></a></div><div><a href="/2022/04/25/MRCTF-2022-留档/" title="MRCTF 2022 留档"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-25</div><div class="title">MRCTF 2022 留档</div></div></a></div><div><a href="/2022/08/22/强网杯-2022-游记/" title="强网杯 2022 线下赛游记"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-22</div><div class="title">强网杯 2022 线下赛游记</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Crabtux</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Crabtux"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Crabtux" target="_blank" title=""><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yue2002113@163.com" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">特别感谢修女克蕾雅官方字幕组组员制作的鼠标指针。引个流：<a target="_blank" rel="noopener" href="https://space.bilibili.com/362420674">https://space.bilibili.com/362420674</a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%87%BA%E7%9A%84%E9%A2%98%E7%9B%AE"><span class="toc-number">1.</span> <span class="toc-text">解出的题目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Interception-I-100-pts-Other"><span class="toc-number">1.1.</span> <span class="toc-text">Interception I (100 pts) (Other)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Interception-II-150-pts-Other"><span class="toc-number">1.2.</span> <span class="toc-text">Interception II (150 pts) (Other)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Easy-as-it-TCP-Streams-250-pts-Forensics"><span class="toc-number">1.3.</span> <span class="toc-text">Easy as it (TCP) Streams (250 pts) (Forensics)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pattern-of-Life-275-pts-Forensics"><span class="toc-number">1.4.</span> <span class="toc-text">Pattern of Life (275 pts) (Forensics)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#I-want-my-files-back-275-pts-Reconnaissance"><span class="toc-number">1.5.</span> <span class="toc-text">I want my files back (275 pts) (Reconnaissance)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Searcher-275-pts-Reconnaissance"><span class="toc-number">1.6.</span> <span class="toc-text">The Searcher (275 pts) (Reconnaissance)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AA%E8%A7%A3%E5%87%BA%E7%9A%84%E9%A2%98%E7%9B%AE"><span class="toc-number">2.</span> <span class="toc-text">未解出的题目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Interception-III-275-pts-Other"><span class="toc-number">2.1.</span> <span class="toc-text">Interception III (275 pts) (Other)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mystery-C2-Server-350-pts-Reconnaissance"><span class="toc-number">2.2.</span> <span class="toc-text">Mystery C2 Server (350 pts) (Reconnaissance)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-Carver-475-pts-Forensics"><span class="toc-number">2.3.</span> <span class="toc-text">The Carver (475 pts) (Forensics)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Where%E2%80%99s-Vedder-525-pts-Reconnaissance"><span class="toc-number">2.4.</span> <span class="toc-text">Where’s Vedder? (525 pts) (Reconnaissance)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Online-Presence-550-pts-Reconnaissance"><span class="toc-number">2.5.</span> <span class="toc-text">Online Presence (550 pts) (Reconnaissance)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#They-call-me-TracerT-550-pts-Reconnaissance"><span class="toc-number">2.6.</span> <span class="toc-text">They call me TracerT (550 pts) (Reconnaissance)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#New-Spot-600-pts-Reconnaissance"><span class="toc-number">2.7.</span> <span class="toc-text">New Spot (600 pts) (Reconnaissance)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Step-into-the-NET-600-pts-Other"><span class="toc-number">2.8.</span> <span class="toc-text">Step into the NET (600 pts) (Other)</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/08/22/%E5%BC%BA%E7%BD%91%E6%9D%AF-2022-%E6%B8%B8%E8%AE%B0/" title="强网杯 2022 线下赛游记">强网杯 2022 线下赛游记</a><time datetime="2022-08-22T04:30:18.000Z" title="发表于 2022-08-22 12:30:18">2022-08-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/25/MRCTF-2022-%E7%95%99%E6%A1%A3/" title="MRCTF 2022 留档">MRCTF 2022 留档</a><time datetime="2022-04-25T06:49:14.000Z" title="发表于 2022-04-25 14:49:14">2022-04-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/21/Zer0pts-CTF-2022-%E7%95%99%E6%A1%A3/" title="Zer0pts CTF 2022 留档">Zer0pts CTF 2022 留档</a><time datetime="2022-04-20T17:39:19.000Z" title="发表于 2022-04-21 01:39:19">2022-04-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/05/%E4%B8%BA%E7%BA%A2%E7%B1%B3-2-%E5%88%B7%E4%B8%8A-mobian-%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%B0%E5%BD%95/" title="与红米 2s 和魔改版 mobian 系统之间的二三事">与红米 2s 和魔改版 mobian 系统之间的二三事</a><time datetime="2022-04-05T15:09:50.000Z" title="发表于 2022-04-05 23:09:50">2022-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/12/06/MetaCTF-%E7%95%99%E6%A1%A3/" title="MetaCTF 留档">MetaCTF 留档</a><time datetime="2021-12-06T07:07:26.000Z" title="发表于 2021-12-06 15:07:26">2021-12-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Crabtux</div><div class="footer_custom_text">Powered by Hexo | Theme by Butterfly</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/snackbarjs/1.1.0/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'U3RKCmNukxn1aR3kRjbFiJBg-gzGzoHsz',
+      appKey: 'qoDDTHtNwDDTnY6GUOgpogI9',
+      placeholder: '都来了，不留个评论嘛╰(*°▽°*)╯',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="/js/PureSnow/PureSnow.js"></script> <div id="snow"></div></div></body></html>

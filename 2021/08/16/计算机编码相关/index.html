@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>计算机编码相关 | 忧郁沙茶の博客</title><meta name="keywords" content="计算机杂项"><meta name="author" content="Crabtux"><meta name="copyright" content="Crabtux"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="现在有 ASCII、ANSI、Unicode（UTF-8、UTF-16）的简介和一些案例（？）。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="计算机编码相关">
+<meta property="og:url" content="http://crabtux.github.io/2021/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A0%81%E7%9B%B8%E5%85%B3/index.html">
+<meta property="og:site_name" content="忧郁沙茶の博客">
+<meta property="og:description" content="现在有 ASCII、ANSI、Unicode（UTF-8、UTF-16）的简介和一些案例（？）。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg">
+<meta property="article:published_time" content="2021-08-16T08:17:55.000Z">
+<meta property="article:modified_time" content="2023-04-07T08:46:10.406Z">
+<meta property="article:author" content="Crabtux">
+<meta property="article:tag" content="计算机杂项">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://crabtux.github.io/2021/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A0%81%E7%9B%B8%E5%85%B3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/snackbarjs/1.1.0/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '计算机编码相关',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-07 16:46:10'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/PureSnow/PureSnow.css"> <link rel="stylesheet" href="/css/Cursor/cursor.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="忧郁沙茶の博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-address-card"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/bulletin-board/"><i class="fa-fw fas fa-book"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">忧郁沙茶の博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-address-card"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/bulletin-board/"><i class="fa-fw fas fa-book"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">计算机编码相关</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-08-16T08:17:55.000Z" title="发表于 2021-08-16 16:17:55">2021-08-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-07T08:46:10.406Z" title="更新于 2023-04-07 16:46:10">2023-04-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2021/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A0%81%E7%9B%B8%E5%85%B3/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/08/16/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BC%96%E7%A0%81%E7%9B%B8%E5%85%B3/" itemprop="commentCount"></span></a></span></div></div></div><article class="post-content" id="article-container"><h2 id="参考资料："><a href="#参考资料：" class="headerlink" title="参考资料："></a>参考资料：</h2><p>ANSI 是什么编码？（CSDN，作者：imxiangzi）<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/imxiangzi/article/details/77370160">https://blog.csdn.net/imxiangzi/article/details/77370160</a></p>
+<p>CTF-Wiki（Github）<br><a target="_blank" rel="noopener" href="https://ctf-wiki.github.io/ctf-wiki/">https://ctf-wiki.github.io/ctf-wiki/</a></p>
+<p>阮一峰的网络日志：字符编码笔记<br><a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html">http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html</a></p>
+<p>Unicode(UTF-8, UTF-16)令人混淆的概念（博客园，作者：Boblim）<br><a target="_blank" rel="noopener" href="https://www.cnblogs.com/fnlingnzb-learner/p/6163205.html">https://www.cnblogs.com/fnlingnzb-learner/p/6163205.html</a><br><br></p>
+<h2 id="ASCII-编码"><a href="#ASCII-编码" class="headerlink" title="ASCII 编码"></a>ASCII 编码</h2><p>百度百科给出的解释如下：</p>
+<blockquote>
+<p>ASCII 是基于拉丁字母的一套电脑编码系统。<br>主要用于显示现代英语和其他西欧语言。<br>它是最通用的信息交换标准。</p>
+</blockquote>
+<p>标准的 ASCII 码使用 7 位二进制数，定义了 128 个字符，涵盖了大小写字母、数字、标点符号以及一些特殊的控制字符。</p>
+<ul>
+<li>0 ~ 31 及 127 是控制字符或通信专用字符。</li>
+<li>32 ~ 126 都是可以显示的字符。<ul>
+<li>48 ~ 57 是阿拉伯数字 0 ~ 10</li>
+<li>65 ~ 90 是 26 个大写英文字母</li>
+<li>91 ~ 122 是 26 个小写英文字母</li>
+<li>其他的都是一些标点符号，比如 ‘,’ ‘.’ 等等</li>
+</ul>
+</li>
+</ul>
+<p>扩展的 ASCII 码使用 8 位二进制数，在标准 ASCII 码的基础上新定义了 128 个字符，表示一些新的符号。<br><br></p>
+<h2 id="ANSI-编码"><a href="#ANSI-编码" class="headerlink" title="ANSI 编码"></a>ANSI 编码</h2><h3 id="ANSI-编码-1"><a href="#ANSI-编码-1" class="headerlink" title="ANSI 编码"></a>ANSI 编码</h3><p>请参阅参考资料 “ANSI 是什么编码？”。<br>一般来说，ANSI 编码都使用 16 位二进制数（即 2 字节）代表一个字符。</p>
+<h3 id="简体中文编码：GB2312、GBK-和-GB18030"><a href="#简体中文编码：GB2312、GBK-和-GB18030" class="headerlink" title="简体中文编码：GB2312、GBK 和 GB18030"></a>简体中文编码：GB2312、GBK 和 GB18030</h3><p>GB2312 编码于 1980 年由中国国家标准总局发布。<br>其基本集收入了 6763 个汉字和 682 个字符，但是要注意，一些罕用字没有被收入。<br>具体编码标准请参阅相关文档。</p>
+<p>GBK 编码于 1995 年发布，是 GB2312 编码的扩展，并且与之兼容。<br>其中收入了 21003 个汉字（包括部首和构件）和 883 个字符。<br>具体编码标准请参阅相关文档。</p>
+<p>GB18030-2005 编码于 2005 年发布，兼容 GB2312 编码和 GBK 编码，并支持 Unicode（GB 13000）的所有码位。<br>其中收入了 70244 个汉字（包括多种少数民族文字）。</p>
+<h3 id="繁体中文编码：Big5"><a href="#繁体中文编码：Big5" class="headerlink" title="繁体中文编码：Big5"></a>繁体中文编码：Big5</h3><p>用到了再写，待补充…<br><br></p>
+<h2 id="Unicode-编码"><a href="#Unicode-编码" class="headerlink" title="Unicode 编码"></a>Unicode 编码</h2><p>Unicode 编码，中文名称 “统一码”、“万国码”…<br>看这高端大气的名字就知道它有多 nb 了吧？<br>它为每种语言的每个字符都设定了一个唯一且确定的二进制编码，以满足跨语言、跨平台进行文本转换、处理的要求。<br>（以上抄自百度百科）</p>
+<p>然而，Unicode 仅仅规定了每一个符号对应的二进制编码，却没有规定它的存储方式：<br> · 究竟使用多少个二进制位/字节进行存储？<br> · 如何文件使用的是 ASCII 编码还是 Unicode 编码？<br> · 如果一个英文文档使用 Unicode 编码，那么其势必会造成存储空间的极大浪费。（为什么？）</p>
+<p>为了解决这些问题，我们需要一种统一的存储方式。</p>
+<h3 id="UTF-8"><a href="#UTF-8" class="headerlink" title="UTF-8"></a>UTF-8</h3><p>这里主要介绍的是 UTF-8 编码，可以用于表示 Unicode 标准中的任何字符。</p>
+<p>UTF-8 编码是一种针对 Unicode 的<strong>可变长度</strong>字符编码，因其最小单位为 1 个字节而得名。<br>其得到广泛应用的重要原因之一是，其编码的第一个字节兼容 ASCII 编码。</p>
+<p>其编码规则如下：<br> · 对于只有 1 个字节的字符，直接按照其 Unicode 编码存储。<br> · 对于具有 n 个字节的字符，第一个字节的前 n 位设为 1，第 n + 1 位设为 0，后面字节的前两位设为 10，剩下的空从低位到高位填上其 Unicode 码。</p>
+<h3 id="UTF-16"><a href="#UTF-16" class="headerlink" title="UTF-16"></a>UTF-16</h3><p>除了 UTF-8 之外，还有一种编码方式得到了广泛的使用（比如固件），这就是 UTF-16。</p>
+<p>在 Unicode 的第一个版本中，UTF-16 的编码长度是固定的 2 字节，也就是说，只能表示 65536 个字符，这显然是不够用的。<br>于是在 Unicode 的第二个版本中，UTF-16 也成为了<strong>可变长度</strong>字符编码，最小单位是一致的。</p>
+<p><strong>请注意，UTF-16 编码不兼容 ASCII！！！！！！！！！！！！</strong></p>
+<h3 id="编码对应的开头标志"><a href="#编码对应的开头标志" class="headerlink" title="编码对应的开头标志"></a>编码对应的开头标志</h3><p>这个东西貌似不太常用，但是姑且先放在这里：<br>EF BB BF        UTF-8<br>FE FF            UTF-16/UCS-2, big endian.<br>FF FE            UTF-16/UCS-2, little endian<br>FF FE 00 00        UTF-32/UCS-4, little endian.<br>00 00 FE FF        UTF-32/UCS-4, big-endian.</p>
+<h3 id="UTF-8-or-UTF-16"><a href="#UTF-8-or-UTF-16" class="headerlink" title="UTF-8 or UTF-16?"></a>UTF-8 or UTF-16?</h3><p>请查阅参考资料 “Unicode(UTF-8, UTF-16)令人混淆的概念”。<br><br></p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="示例-1："><a href="#示例-1：" class="headerlink" title="示例 1："></a>示例 1：</h3><p>源文本 1：Miracle<br>ASCII（16 进制）：4D 69 72 61 63 6C 65</p>
+<h3 id="示例-2："><a href="#示例-2：" class="headerlink" title="示例 2："></a>示例 2：</h3><p>源文本 2：我是忧郁沙茶<br>GBK（16 进制）：CED2 CAC7 D3C7 D3F4 C9B3 B2E8<br>GBK（2 进制）：<br>1100111011010010 1100101011000111<br>1101001111000111 1101001111110100<br>1100100110110011 1011001011101000</p>
+<p>Unicode（16 进制）：6211 662F 5FE7 90C1 6C99 8336<br>Unicode（2 进制）：<br>0110001000010001 0110011000101111<br>0101111111100111 1001000011000001<br>0110110010011001 1000001100110110</p>
+<p>UTF-8（16 进制）：E68891 E698AF E5BFA7 E98381 E6B299 E88CB6<br>UTF-8（2 进制）：<br>111001101000100010010001 111001101001100010101111<br>111001011011111110100111 111010011000001110000001<br>111001101011001010011001 111010001000110010110110<br><br></p>
+<h2 id="大端法与小端法"><a href="#大端法与小端法" class="headerlink" title="大端法与小端法"></a>大端法与小端法</h2><h2 id="关于编码错误…"><a href="#关于编码错误…" class="headerlink" title="关于编码错误…"></a>关于编码错误…</h2><h3 id="锟斤拷烫烫烫"><a href="#锟斤拷烫烫烫" class="headerlink" title="锟斤拷烫烫烫"></a>锟斤拷烫烫烫</h3><p>参照一位知乎匿名用户的解释：</p>
+<blockquote>
+<p>GBK 编码传过去，UTF-8 的服务器不认得，给你返回了容错字符，又被 GBK 翻译回了汉字。。</p>
+</blockquote>
+<h3 id="非常常见的编码问题——ANSI-与-UTF-8-的不兼容"><a href="#非常常见的编码问题——ANSI-与-UTF-8-的不兼容" class="headerlink" title="非常常见的编码问题——ANSI 与 UTF-8 的不兼容"></a>非常常见的编码问题——ANSI 与 UTF-8 的不兼容</h3><p>先说背景吧。我使用的操作系统是 Windows 10，代码编辑器为 VS Code，采用的默认编码是 UTF-8。</p>
+<p>某一天我心血来潮，写了个自动进行 USTC 健康打卡的 Python 脚本，并写了个批处理程序用来每天运行它。<br>然而，值得注意的是，脚本中的一些提示信息是用中文输出的。<br>众所周知，Windows 命令行的默认字符编码是 ANSI，在中文系统下就是 GBK。（大概？）<br>然而，我刚开始写的时候并没有考虑到这个问题……<br>于是，在我第一次使用批处理程序运行脚本时，它成功输出了一堆乱码……</p>
+<p>刚开始，秉持着绝不向 ANSI 低头的决心，我将命令行的编码永久设置为了 UTF-8。<br>然而设置完成之后我却发现，中文路径的显示出现了问题。</p>
+<p>想了想，秉持着绝不向 ANSI 低头的决心，我在批处理文件的开头加了一行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chcp 65001</span><br></pre></td></tr></table></figure>
+<p>这就能使得打开的命令行窗口的字符编码更改为 UTF-8，并且不影响其他的命令行程序。<br><br></p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%9D%82%E9%A1%B9/">计算机杂项</a></div><div class="post_share"></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/10/31/Hackergame-2021-WP与杂谈/" title="Hackergame 2021——杂谈与 WP"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-31</div><div class="title">Hackergame 2021——杂谈与 WP</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Crabtux</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Crabtux"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Crabtux" target="_blank" title=""><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yue2002113@163.com" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">特别感谢修女克蕾雅官方字幕组组员制作的鼠标指针。引个流：<a target="_blank" rel="noopener" href="https://space.bilibili.com/362420674">https://space.bilibili.com/362420674</a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99%EF%BC%9A"><span class="toc-number">1.</span> <span class="toc-text">参考资料：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ASCII-%E7%BC%96%E7%A0%81"><span class="toc-number">2.</span> <span class="toc-text">ASCII 编码</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ANSI-%E7%BC%96%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">ANSI 编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ANSI-%E7%BC%96%E7%A0%81-1"><span class="toc-number">3.1.</span> <span class="toc-text">ANSI 编码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87%E7%BC%96%E7%A0%81%EF%BC%9AGB2312%E3%80%81GBK-%E5%92%8C-GB18030"><span class="toc-number">3.2.</span> <span class="toc-text">简体中文编码：GB2312、GBK 和 GB18030</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B9%81%E4%BD%93%E4%B8%AD%E6%96%87%E7%BC%96%E7%A0%81%EF%BC%9ABig5"><span class="toc-number">3.3.</span> <span class="toc-text">繁体中文编码：Big5</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Unicode-%E7%BC%96%E7%A0%81"><span class="toc-number">4.</span> <span class="toc-text">Unicode 编码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#UTF-8"><span class="toc-number">4.1.</span> <span class="toc-text">UTF-8</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UTF-16"><span class="toc-number">4.2.</span> <span class="toc-text">UTF-16</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BC%96%E7%A0%81%E5%AF%B9%E5%BA%94%E7%9A%84%E5%BC%80%E5%A4%B4%E6%A0%87%E5%BF%97"><span class="toc-number">4.3.</span> <span class="toc-text">编码对应的开头标志</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UTF-8-or-UTF-16"><span class="toc-number">4.4.</span> <span class="toc-text">UTF-8 or UTF-16?</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">5.</span> <span class="toc-text">示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B-1%EF%BC%9A"><span class="toc-number">5.1.</span> <span class="toc-text">示例 1：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B-2%EF%BC%9A"><span class="toc-number">5.2.</span> <span class="toc-text">示例 2：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E7%AB%AF%E6%B3%95%E4%B8%8E%E5%B0%8F%E7%AB%AF%E6%B3%95"><span class="toc-number">6.</span> <span class="toc-text">大端法与小端法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E7%BC%96%E7%A0%81%E9%94%99%E8%AF%AF%E2%80%A6"><span class="toc-number">7.</span> <span class="toc-text">关于编码错误…</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%94%9F%E6%96%A4%E6%8B%B7%E7%83%AB%E7%83%AB%E7%83%AB"><span class="toc-number">7.1.</span> <span class="toc-text">锟斤拷烫烫烫</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%B8%B8%E5%B8%B8%E8%A7%81%E7%9A%84%E7%BC%96%E7%A0%81%E9%97%AE%E9%A2%98%E2%80%94%E2%80%94ANSI-%E4%B8%8E-UTF-8-%E7%9A%84%E4%B8%8D%E5%85%BC%E5%AE%B9"><span class="toc-number">7.2.</span> <span class="toc-text">非常常见的编码问题——ANSI 与 UTF-8 的不兼容</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/08/22/%E5%BC%BA%E7%BD%91%E6%9D%AF-2022-%E6%B8%B8%E8%AE%B0/" title="强网杯 2022 线下赛游记">强网杯 2022 线下赛游记</a><time datetime="2022-08-22T04:30:18.000Z" title="发表于 2022-08-22 12:30:18">2022-08-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/25/MRCTF-2022-%E7%95%99%E6%A1%A3/" title="MRCTF 2022 留档">MRCTF 2022 留档</a><time datetime="2022-04-25T06:49:14.000Z" title="发表于 2022-04-25 14:49:14">2022-04-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/21/Zer0pts-CTF-2022-%E7%95%99%E6%A1%A3/" title="Zer0pts CTF 2022 留档">Zer0pts CTF 2022 留档</a><time datetime="2022-04-20T17:39:19.000Z" title="发表于 2022-04-21 01:39:19">2022-04-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/05/%E4%B8%BA%E7%BA%A2%E7%B1%B3-2-%E5%88%B7%E4%B8%8A-mobian-%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%B0%E5%BD%95/" title="与红米 2s 和魔改版 mobian 系统之间的二三事">与红米 2s 和魔改版 mobian 系统之间的二三事</a><time datetime="2022-04-05T15:09:50.000Z" title="发表于 2022-04-05 23:09:50">2022-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/12/06/MetaCTF-%E7%95%99%E6%A1%A3/" title="MetaCTF 留档">MetaCTF 留档</a><time datetime="2021-12-06T07:07:26.000Z" title="发表于 2021-12-06 15:07:26">2021-12-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Crabtux</div><div class="footer_custom_text">Powered by Hexo | Theme by Butterfly</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/snackbarjs/1.1.0/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'U3RKCmNukxn1aR3kRjbFiJBg-gzGzoHsz',
+      appKey: 'qoDDTHtNwDDTnY6GUOgpogI9',
+      placeholder: '都来了，不留个评论嘛╰(*°▽°*)╯',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="/js/PureSnow/PureSnow.js"></script> <div id="snow"></div></div></body></html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html><html lang="[&quot;zh-CN&quot;,&quot;en&quot;,&quot;default&quot;]" data-theme="dark"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>L3HCTF 留档 | 忧郁沙茶の博客</title><meta name="keywords" content="CTF"><meta name="author" content="Crabtux"><meta name="copyright" content="Crabtux"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#0d0d0d"><meta name="description" content="爆零了。我还是太菜了。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="L3HCTF 留档">
+<meta property="og:url" content="http://crabtux.github.io/2021/11/24/L3HCTF-%E7%95%99%E6%A1%A3/index.html">
+<meta property="og:site_name" content="忧郁沙茶の博客">
+<meta property="og:description" content="爆零了。我还是太菜了。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg">
+<meta property="article:published_time" content="2021-11-24T13:17:23.000Z">
+<meta property="article:modified_time" content="2023-04-07T08:45:41.830Z">
+<meta property="article:author" content="Crabtux">
+<meta property="article:tag" content="CTF">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://crabtux.github.io/2021/11/24/L3HCTF-%E7%95%99%E6%A1%A3/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.13.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/snackbarjs/1.1.0/snackbar.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#121212","position":"bottom-left"},
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'L3HCTF 留档',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-07 16:45:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const fontSizeVal = saveToLocal.get('global-font-size')
+    if (fontSizeVal !== undefined) {
+      document.documentElement.style.setProperty('--global-font-size', fontSizeVal + 'px')
+    }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/PureSnow/PureSnow.css"> <link rel="stylesheet" href="/css/Cursor/cursor.css"><meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="忧郁沙茶の博客" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-address-card"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/bulletin-board/"><i class="fa-fw fas fa-book"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">忧郁沙茶の博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-folder-open"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-address-card"></i><span> 关于我</span></a></div><div class="menus_item"><a class="site-page" href="/bulletin-board/"><i class="fa-fw fas fa-book"></i><span> 日志</span></a></div><div class="menus_item"><a class="site-page" href="/friends/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">L3HCTF 留档</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-11-24T13:17:23.000Z" title="发表于 2021-11-24 21:17:23">2021-11-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-04-07T08:45:41.830Z" title="更新于 2023-04-07 16:45:41">2023-04-07</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">评论数:</span><a href="/2021/11/24/L3HCTF-%E7%95%99%E6%A1%A3/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count" data-xid="/2021/11/24/L3HCTF-%E7%95%99%E6%A1%A3/" itemprop="commentCount"></span></a></span></div></div></div><article class="post-content" id="article-container"><h2 id="比赛情况"><a href="#比赛情况" class="headerlink" title="比赛情况"></a>比赛情况</h2><ul>
+<li>比赛时间（UTC-8）：2021-11-13 09:00:00 ~ 2021-11-15 09:00:00，共计 48 h</li>
+<li>比赛模式：解题模式（动态分值，无一血奖励）</li>
+<li>队伍总分：6016</li>
+<li>队伍排名：7</li>
+<li>贡献分数：0</li>
+</ul>
+<h2 id="前言与吐槽"><a href="#前言与吐槽" class="headerlink" title="前言与吐槽"></a>前言与吐槽</h2><p>第一次打正儿八经的 CTF，因为 Misc 方向没人做所以想去试试。</p>
+<p><del>其实就是我啥都不会还想凑热闹而已</del></p>
+<p>不过很遗憾，从各个队伍的解题情况来看，这次 Misc 除了签到题就没有什么能写的题目。</p>
+<p>我只看了一道题目 BootFlag，从 13 号上午 10 点一直看到 14 号晚上睡觉。中途善良的 cwz 大爷前来支援，给了我巨大的精神激励。结果还是没写出来。长达 3 页半的 Google 文档生动形象地展示了我当时有多么发狂。</p>
+<p>不过这道题难度确实不低，貌似到比赛结束为止，这道题也就只有 5 个队伍解出来。</p>
+<p>（然而其他 Misc 更是重量级……）</p>
+<p>当然，如果是那种一点希望都没有的 “做不出来”，那我就不会在这里写留档了对吧？实际上我们离完全解出题目已经不远了，思路基本上是对的，但是细节上出了一些问题。正因如此，我才想写下这篇留档，总结经验，吸取教训，争取下次<del>还寄</del>能写出一题。</p>
+<h2 id="未解出的题目"><a href="#未解出的题目" class="headerlink" title="未解出的题目"></a>未解出的题目</h2><h3 id="BootFlag"><a href="#BootFlag" class="headerlink" title="BootFlag"></a>BootFlag</h3><p>附件给了一个压缩包，拉下来解压缩之后发现里面装了一个视频和一个 bin 文件。bin 文件是 AMI Aptio UEFI 固件，视频是密码设置的全过程录屏。</p>
+<p>题目要求是，提取 BIOS 中的 Administration Password 和 User Password。</p>
+<p>从视频中可以看出，两个密码都只有四位，而且题目也给了密码的取值范围，很明显是想让我们爆破。</p>
+<p>一开始我想的是，直接通过虚拟机一类的东西加载 BIOS 固件，然后想办法自动化爆破，然而缺乏经验的我连用虚拟机加载 BIOS 这一步都无法完成，只好作罢。</p>
+<p>而且后来才想起来，密码还是有 1M+ 种情况的，这么爆破还是不现实。</p>
+<p>那就只能求助谷歌娘了，Google 搜索 AMI BIOS Password Recovery，可以找到如下链接：<a target="_blank" rel="noopener" href="https://gist.github.com/en4rab/550880c099b5194fbbf3039e3c8ab6fd">https://gist.github.com/en4rab/550880c099b5194fbbf3039e3c8ab6fd</a></p>
+<p>文章的作者使用了 UEFITool 这一工具，提取了固件中存储于 AMITSESetup 模块的密文，并使用异或解密成功恢复了明文。</p>
+<p>然而，当我们满心欢喜地敲开 BIOS 的脑壳（在 follow 上述文章的步骤前，请注意你的 UEFITool 的版本，我在这里吃了亏），提取密文，试图用同样的方法获取明文时，却明显地发现了不对劲。</p>
+<p>首先，我们提取出的密文长度与文章中的密文长度不一致。具体来说，在忽略掉末尾的 0 之后，我们提取出的密文长度为 256 bits，而文章中的密文长度却是 512 bits。</p>
+<p>其次，对我们获取的密文尝试进行异或解密遭到了失败。这就说明，我们手中的密文使用了另外的加密方式。</p>
+<p>在没有提示的情况下，我们也可以猜测其加密方式。256 bits 的密文长度很有代表性。更重要的是，题目的意思很明显是让我们爆破密码。综合上述两点，最有可能符合要求的加密方式就是 SHA-256 了。</p>
+<p>然而，现在的问题在于，经过 cwz 大爷和我的尝试，直接对明文字符串用 Python 进行 SHA-256 的爆破是没有结果的。</p>
+<p>我想到，会不会是对面的 SHA-256 加密方式有一些奇奇怪怪的变动，从而能够适应固件的需求呢？可如果真是这样，我们又如何知道他们到底是如何进行 SHA-256 的加密呢？</p>
+<p>两个办法，一个办法是，用 UEFITool 把负责密码的模块 AMITSE 提取出来，交给 Reverse 大佬逆掉。这就是我为什么前面说后悔没去活动室找彪哥抱大腿的原因（虽然其实我当时也没想到把固件模块直接逆掉）</p>
+<p>当然还有一个办法，不过要结合提示来看，自己想起来还是比较困难的。在我搜索 AMI BIOS Password Recovery 的过程中，我注意到，有一个网站提到，Aptio 的源代码曾经遭到过泄露，但当时我没有在意。</p>
+<p>然而，提示出来之后，我在 Github 上乱逛的时候，意外发现了 Aptio 泄露的源代码，正好对应了提示信息中的 Github leak。</p>
+<p>当时好像已经是 14 号下午了，我欣喜若狂，心说我这他妈不是稳了吗？！</p>
+<p>然后我就在这里寄了。官方 WP 里一句轻描淡写的 “仔细阅读源码” 就给我干碎了。</p>
+<p>我的爆破代码漏了两个东西。</p>
+<p>一个是 UTF-16 的编码。这玩意是不兼容 ASCII 编码的，我当时还在想为啥 Password 要用 UINT16，而不是 UINT8 来存储。<br>一个是将明文的二进制表示用 0 补全到 40 字节。<br>考虑到这两个因素之后，官方的 WP 的爆破代码如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> hashlib</span><br><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line"><span class="keyword">import</span> string</span><br><span class="line"></span><br><span class="line">hash1 = (<span class="string">&quot;c0470b97efc32108a06fe1b695b447c845f78d90438f43f1e2bed18a5af4e704&quot;</span>)</span><br><span class="line">hash2 = (<span class="string">&quot;ab1e1a0f2127221775bc850312da0ba81e55a13e0c08f144382b6b11c8890494&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> itertools.permutations(string.digits+string.ascii_letters, <span class="number">4</span>):</span><br><span class="line">    p = <span class="string">&#x27;&#x27;</span>.join(i)</span><br><span class="line">    p = <span class="built_in">str</span>.encode(p, <span class="string">&#x27;utf-16&#x27;</span>)[<span class="number">2</span>:]</span><br><span class="line">    p = p.ljust(<span class="number">40</span>, <span class="string">b&#x27;\x00&#x27;</span>)</span><br><span class="line">    <span class="built_in">hash</span> = hashlib.sha256(p).hexdigest()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">hash</span> == hash1:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;hash1:&quot;</span>, <span class="string">&#x27;&#x27;</span>.join(i))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> <span class="built_in">hash</span> == hash2:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;hash2:&quot;</span>, <span class="string">&#x27;&#x27;</span>.join(i))</span><br></pre></td></tr></table></figure>
+
+<p>运行脚本即可获得两个密码，从而解出 flag。</p>
+</article><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/CTF/">CTF</a></div><div class="post_share"></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2022/04/21/Zer0pts-CTF-2022-留档/" title="Zer0pts CTF 2022 留档"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-21</div><div class="title">Zer0pts CTF 2022 留档</div></div></a></div><div><a href="/2022/04/25/MRCTF-2022-留档/" title="MRCTF 2022 留档"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-04-25</div><div class="title">MRCTF 2022 留档</div></div></a></div><div><a href="/2021/12/06/MetaCTF-留档/" title="MetaCTF 留档"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-12-06</div><div class="title">MetaCTF 留档</div></div></a></div><div><a href="/2022/08/22/强网杯-2022-游记/" title="强网杯 2022 线下赛游记"><img class="cover" src="https://www.imageoss.com/images/2021/08/15/img04ae5700cd985f3d42.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-22</div><div class="title">强网杯 2022 线下赛游记</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Crabtux</div><div class="author-info__description"></div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">9</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Crabtux"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/Crabtux" target="_blank" title=""><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:yue2002113@163.com" target="_blank" title=""><i class="fas fa-envelope"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">特别感谢修女克蕾雅官方字幕组组员制作的鼠标指针。引个流：<a target="_blank" rel="noopener" href="https://space.bilibili.com/362420674">https://space.bilibili.com/362420674</a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%AF%94%E8%B5%9B%E6%83%85%E5%86%B5"><span class="toc-number">1.</span> <span class="toc-text">比赛情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80%E4%B8%8E%E5%90%90%E6%A7%BD"><span class="toc-number">2.</span> <span class="toc-text">前言与吐槽</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AA%E8%A7%A3%E5%87%BA%E7%9A%84%E9%A2%98%E7%9B%AE"><span class="toc-number">3.</span> <span class="toc-text">未解出的题目</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#BootFlag"><span class="toc-number">3.1.</span> <span class="toc-text">BootFlag</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/08/22/%E5%BC%BA%E7%BD%91%E6%9D%AF-2022-%E6%B8%B8%E8%AE%B0/" title="强网杯 2022 线下赛游记">强网杯 2022 线下赛游记</a><time datetime="2022-08-22T04:30:18.000Z" title="发表于 2022-08-22 12:30:18">2022-08-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/25/MRCTF-2022-%E7%95%99%E6%A1%A3/" title="MRCTF 2022 留档">MRCTF 2022 留档</a><time datetime="2022-04-25T06:49:14.000Z" title="发表于 2022-04-25 14:49:14">2022-04-25</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/21/Zer0pts-CTF-2022-%E7%95%99%E6%A1%A3/" title="Zer0pts CTF 2022 留档">Zer0pts CTF 2022 留档</a><time datetime="2022-04-20T17:39:19.000Z" title="发表于 2022-04-21 01:39:19">2022-04-21</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/04/05/%E4%B8%BA%E7%BA%A2%E7%B1%B3-2-%E5%88%B7%E4%B8%8A-mobian-%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%AE%B0%E5%BD%95/" title="与红米 2s 和魔改版 mobian 系统之间的二三事">与红米 2s 和魔改版 mobian 系统之间的二三事</a><time datetime="2022-04-05T15:09:50.000Z" title="发表于 2022-04-05 23:09:50">2022-04-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2021/12/06/MetaCTF-%E7%95%99%E6%A1%A3/" title="MetaCTF 留档">MetaCTF 留档</a><time datetime="2021-12-06T07:07:26.000Z" title="发表于 2021-12-06 15:07:26">2021-12-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2023 By Crabtux</div><div class="footer_custom_text">Powered by Hexo | Theme by Butterfly</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="font-plus" type="button" title="放大字体"><i class="fas fa-plus"></i></button><button id="font-minus" type="button" title="缩小字体"><i class="fas fa-minus"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/snackbarjs/1.1.0/snackbar.min.js"></script><div class="js-pjax"><script>function loadValine () {
+  function initValine () {
+    const valine = new Valine(Object.assign({
+      el: '#vcomment',
+      appId: 'U3RKCmNukxn1aR3kRjbFiJBg-gzGzoHsz',
+      appKey: 'qoDDTHtNwDDTnY6GUOgpogI9',
+      placeholder: '都来了，不留个评论嘛╰(*°▽°*)╯',
+      avatar: 'monsterid',
+      meta: 'nick,mail,link'.split(','),
+      pageSize: '10',
+      lang: 'zh-CN',
+      recordIP: false,
+      serverURLs: '',
+      emojiCDN: '',
+      emojiMaps: "",
+      enableQQ: false,
+      path: window.location.pathname,
+      requiredFields: ["nick,mail"],
+      visitor: false
+    }, null))
+  }
+
+  if (typeof Valine === 'function') initValine() 
+  else getScript('https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/valine/1.4.16/Valine.min.js').then(initValine)
+}
+
+if ('Valine' === 'Valine' || !false) {
+  if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
+  else setTimeout(loadValine, 0)
+} else {
+  function loadOtherComment () {
+    loadValine()
+  }
+}</script></div><script src="/js/PureSnow/PureSnow.js"></script> <div id="snow"></div></div></body></html>
